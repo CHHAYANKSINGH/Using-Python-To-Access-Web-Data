@@ -33,3 +33,14 @@ Ans: stephen.marquard@uct.ac.za
 
 *******************************************************************
 ASSIGNMENT CHAPTER 11
+import re
+file = open('regex_sum_577131.txt')
+sum = 0
+sum=0
+count = 0
+for line in handle:
+	f = re.findall('[0-9]+',line)
+	for num in f:
+			count = count + 1
+			sum = sum + int(num)
+print('There are',count,'values with a sum =',sum)
